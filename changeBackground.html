@@ -1,0 +1,22 @@
+<!-- Program to change background color of html page. input should be taken from keyboard -->
+<html>
+  <head>
+    <title>Change Background Color</title>
+  </head>
+  <body id="container">
+    <p id="para"></p>
+    <script>
+      var para = document.getElementById('para');
+      document.body.addEventListener('keydown', function (e) {
+        if (e.keyCode >= 65 && e.keyCode <= 90) {
+          para.textContent += e.key;
+          document.getElementById('container').style.background = para.textContent;
+        }
+        else {
+          para.textContent = "";
+          document.getElementById('container').style.background = '#fff';
+        }
+      });
+    </script>
+  </body>
+</html>

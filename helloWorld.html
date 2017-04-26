@@ -1,0 +1,17 @@
+<!-- Program to print Hello World by parsing string -->
+
+<!doctype html>
+<html>
+<head>
+    <title>Nested document.write()</title>
+</head>
+<body>
+<script>
+    (function(s) {
+        //write your code here to parse s and print "Hello World". Remember - your solution must work for n level of document.write() nesting
+        var indexOfHello = s.search("Hello");
+        document.write(s.slice(indexOfHello,indexOfHello+11));
+    })("document.write('<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write<script>document.write(\"<script>document.write('<script>document.write(\"Hello World\");<\/script>');<\/script>\");<\/script>')");
+</script>
+</body>
+</html>
